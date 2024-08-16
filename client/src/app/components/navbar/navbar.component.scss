@@ -1,0 +1,14 @@
+mat-toolbar {
+    background-color: #d7e3ff;
+    display: flex;
+    justify-content: space-between;
+
+    .brand {
+        font-family: "Fredoka", sans-serif;
+        font-size: 28px;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+}
