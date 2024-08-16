@@ -2,3 +2,17 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+p {
+    font-family: arial, "Helvetica Neue", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Playfair Display", serif !important;
+    font-optical-sizing: auto !important;
+    font-style: normal !important;
+}
