@@ -1,5 +1,5 @@
 mat-toolbar {
-    background-color: #d7e3ff;
+    background-color: #F4F1EC;
     display: flex;
     justify-content: space-between;
 
@@ -10,5 +10,9 @@ mat-toolbar {
         font-weight: bold;
         font-style: normal;
         font-variation-settings: "wdth" 100;
+    }
+
+    button {
+        background-color: #C48820;
     }
 }

@@ -1,0 +1,6 @@
+$navFooterHeight: 8rem;
+
+main {
+    min-height: calc(100dvh - $navFooterHeight);
+    background-color: #F4F1EC;
+}

@@ -1,7 +1,5 @@
-.container {
-    min-height: 100dvh;
+$navFooterHeight: 8rem;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+main {
+    min-height: calc(100dvh - $navFooterHeight);
 }
