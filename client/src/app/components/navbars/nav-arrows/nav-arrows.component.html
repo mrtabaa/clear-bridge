@@ -1,8 +1,13 @@
 <div class="bottom-navs">
-    <button (click)="goBack()" [disabled]="isBackBtnDisabled" mat-icon-button>
-        <mat-icon color="primary" [ngStyle]="{color: isBackBtnDisabled ? 'gray' : ''}">arrow_circle_left</mat-icon>
+    <button (click)="goBack()" [disabled]="isHomePage" mat-icon-button>
+        <mat-icon [ngStyle]="{color: isHomePage ? 'gray' : ''}">arrow_circle_left</mat-icon>
     </button>
-    <button (click)="goNext()" [disabled]="isNextBtnDisabled" mat-icon-button>
-        <mat-icon [ngStyle]="{color: isNextBtnDisabled ? 'gray' : ''}">arrow_circle_right</mat-icon>
+    @if(!isHomePage) {
+    <button (click)="goHome()" mat-icon-button>
+        <mat-icon [ngStyle]="{color: isContactUsPage ? 'gray' : ''}">home</mat-icon>
+    </button>
+    }
+    <button (click)="goNext()" [disabled]="isContactUsPage" mat-icon-button>
+        <mat-icon [ngStyle]="{color: isContactUsPage ? 'gray' : ''}">arrow_circle_right</mat-icon>
     </button>
 </div>
