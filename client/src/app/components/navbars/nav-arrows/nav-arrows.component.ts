@@ -26,7 +26,7 @@ export class NavArrowsComponent implements OnInit {
     if (this._url === '/')
       this.isBackBtnDisabled = true;
 
-    if (this._url === 'contact-us')
+    if (this._url === '/contact-us')
       this.isNextBtnDisabled = true;
   }
 
@@ -42,7 +42,7 @@ export class NavArrowsComponent implements OnInit {
   }
 
   goNext(): void {
-    if (this._url === 'contact-us')
+    if (this._url === '/contact-us')
       this.isNextBtnDisabled = true;
     else {
       this.isNextBtnDisabled = false;
