@@ -2,7 +2,7 @@ import { NgOptimizedImage } from '@angular/common';
 import { Component, inject, Signal } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
-import { CommonService } from '../../services/common.service';
+import { CommonService } from '../../../services/common.service';
 import { MatDividerModule } from '@angular/material/divider';
 
 @Component({

@@ -1,5 +1,6 @@
-$navFooterHeight: 8rem;
+$navFooterHeight: 4rem;
+$matDividerHeight: 1px;
 
 main {
-    min-height: calc(100dvh - $navFooterHeight);
+    min-height: calc(100dvh - $navFooterHeight - $matDividerHeight);
 }
