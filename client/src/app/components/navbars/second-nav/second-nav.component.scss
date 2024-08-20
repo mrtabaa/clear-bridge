@@ -1,4 +1,6 @@
-$orange: #C48820;
+$orangeText: #C48820;
+$bgOrange: #ff8c57;
+$blue: #034E7B;
 
 .container {
     display: flex;
@@ -17,22 +19,22 @@ $orange: #C48820;
             text-decoration: none;
 
             &:hover {
-                color: $orange;
+                color: $orangeText;
             }
             
             mat-icon {
                 font-size: 4rem;
                 width: fit-content;
                 height: fit-content;
-                background-color: #034E7B;
-                border: 3px solid $orange;
+                background-color: $blue;
+                border: 3px solid $bgOrange;
                 border-radius: 50%;
                 padding: 1rem;
-                color: $orange;
+                color: $orangeText;
 
                 &:hover {
                     color: white;
-                    border-color: #034E7B;
+                    border-color: $blue;
                 }
             }
         }
