@@ -1,10 +1,130 @@
+$bgOrange: #ff8c57;
+$blue: #034E7B;
+$pageW: 70%;
+$grayBoxRadius: 3rem;
+
+p {
+    margin: 0;
+}
+
 main {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     padding: 1rem 0;
+
+    .row-1 {
+        display: flex;
+        width: $pageW;
+
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            flex: 1;
+            padding: 1rem;
+
+            .head {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .title {
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    padding: 1rem;
+                    background-color: $blue;
+                    width: 6rem;
+                    height: 6rem;
+                    border-radius: 50%;
+                    font-weight: bold;
+                    color: white;
+                    border: $bgOrange solid;
+                }
+
+                .subtitle {
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+
+            .content {
+                text-align: justify;
+                text-justify: inter-word;
+            }
+
+            .middle {
+                z-index: 1;
+                max-width: 20rem;
+            }
+
+            .gray-wrapper {
+                position: absolute;
+                background-color: gray;
+                padding: 1rem;
+                background-image: linear-gradient(to right, rgb(150, 150, 150), white);
+                border-radius: $grayBoxRadius;
+                rotate: 45deg;
+                width: 20rem;
+                height: 20rem;
+                z-index: -1;
+            }
+        }
+    }
+
+    .row-2 {
+        position: relative;
+        margin-top: 5dvh;
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+        width: 100%;
+
+        .photo {
+            position: absolute;
+            left: -15rem;
+            bottom: -12rem;
+            background-image: linear-gradient(to bottom right, gray, white);
+            rotate: 45deg;
+            width: 30rem;
+            height: 30rem;
+            border-radius: 4rem;
+
+            img {
+                position: absolute;
+                left: 15rem;
+                top: 5rem;
+                rotate: -45deg;
+                border-radius: 1rem;
+            }
+        }
+
+        .texts {
+            display: flex;
+            flex-direction: column;
+            max-width: 70%;
+            margin-right: 5%;
+            padding: 1rem;
+            background-color: $bgOrange;
+            border-radius: $grayBoxRadius;
+
+            .title {
+                color: white;
+                font-weight: bold;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    }
 
     app-nav-arrows {
         width: 90%;
