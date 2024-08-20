@@ -1,7 +1,4 @@
-.bottom-navs {
-    display: flex;
-    justify-content: space-between;
-
+@mixin matIconStyle {
     button {
         position: relative;
 
@@ -19,4 +16,22 @@
             }
         }
     }
+}
+
+.button-navs {
+    display: flex;
+    justify-content: space-between;
+    @include matIconStyle();
+}
+
+.button-navs-home {
+    display: flex;
+    justify-content: flex-end;
+    @include matIconStyle();
+}
+
+.button-navs-contact-us {
+    display: flex;
+    justify-content: space-between;
+    @include matIconStyle();
 }

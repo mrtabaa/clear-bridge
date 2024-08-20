@@ -1,13 +1,15 @@
-<div class="bottom-navs">
-    <button (click)="goBack()" [disabled]="isHomePage" mat-icon-button>
-        <mat-icon [ngStyle]="{color: isHomePage ? 'gray' : ''}">arrow_circle_left</mat-icon>
-    </button>
+<div [ngClass]="isHomePage ? 'button-navs-home' : isContactUsPage ? 'button-navs-contact-us' : 'button-navs'">
     @if(!isHomePage) {
+    <button (click)="goBack()" mat-icon-button>
+        <mat-icon>arrow_circle_left</mat-icon>
+    </button>
     <button (click)="goHome()" mat-icon-button>
-        <mat-icon [ngStyle]="{color: isContactUsPage ? 'gray' : ''}">home</mat-icon>
+        <mat-icon>home</mat-icon>
     </button>
     }
-    <button (click)="goNext()" [disabled]="isContactUsPage" mat-icon-button>
+    @if(!isContactUsPage) {
+    <button (click)="goNext()" mat-icon-button>
         <mat-icon [ngStyle]="{color: isContactUsPage ? 'gray' : ''}">arrow_circle_right</mat-icon>
     </button>
+    }
 </div>
