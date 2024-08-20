@@ -1,3 +1,5 @@
+$orange: #C48820;
+
 .container {
     display: flex;
     justify-content: center;
@@ -13,16 +15,20 @@
             gap: 1rem;
             align-items: center;
             text-decoration: none;
+
+            &:hover {
+                color: $orange;
+            }
             
             mat-icon {
                 font-size: 4rem;
                 width: fit-content;
                 height: fit-content;
                 background-color: #034E7B;
-                border: 3px solid #C48820;
+                border: 3px solid $orange;
                 border-radius: 50%;
                 padding: 1rem;
-                color: #C48820;
+                color: $orange;
 
                 &:hover {
                     color: white;
