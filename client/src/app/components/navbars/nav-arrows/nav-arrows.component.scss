@@ -13,6 +13,8 @@
             transform: translateX(-50%) translateY(-50%);
 
             &:hover {
+                border-radius: 50%;
+                border: #ff8c57 solid 1px;
                 color: #ff8c57;
             }
         }
