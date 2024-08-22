@@ -2,14 +2,26 @@ mat-toolbar {
     background-color: #F4F1EC;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     .brand {
-        font-family: "Fredoka", sans-serif;
-        font-size: 28px;
-        font-optical-sizing: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 4rem;
+
+        p {
+            font-family: "Fredoka", sans-serif;
+            font-size: 1rem;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+        }
+    }
+
+    .title {
         font-weight: bold;
-        font-style: normal;
-        font-variation-settings: "wdth" 100;
     }
 
     button {
