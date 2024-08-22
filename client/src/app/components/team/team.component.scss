@@ -1,15 +1,82 @@
+$txtOrange: #C48820;
+
 main {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     gap: 1rem;
-    padding: 1rem 0;
     min-height: 100%;
+
+    .left {
+        .bg-shape {
+            height: 80dvh;
+            width: 80dvh;
+            position: absolute;
+            left: -35dvh;
+            top: 0;
+            background: linear-gradient(to top right, #97c2ff, #103368);
+            color: $txtOrange;
+            rotate: 45deg;
+            border-radius: 10rem;
+            z-index: -1;
+        }
+
+        .title {
+            position: absolute;
+            left: 20dvh;
+            top: 40dvh;
+            color: $txtOrange;
+            font-weight: bold;
+        }
+    }
+
+    .right {
+        align-self: flex-end;
+        margin-right: 5rem;
+
+        .row {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            .profile-photo {
+                border-radius: 50%;
+            }
+
+            .image-connect-line {
+                border: solid black 2px;
+                height: 40dvh;
+                position: absolute;
+                top: 10dvh;
+                left: 48px;
+                z-index: -1;
+            }
+
+            .content {
+                width: 100%;
+
+                .divider {
+                    width: 100%;
+                    border: dashed black 1px;
+                }
+
+                .bottom-text {
+                    margin-top: 0.5rem;
+                }
+            }
+
+            .uni-logo {
+                
+            }
+        }
+    }
 
     app-nav-arrows {
         width: 90%;
         position: fixed;
         bottom: 4rem;
+        align-self: center;
     }
 }
