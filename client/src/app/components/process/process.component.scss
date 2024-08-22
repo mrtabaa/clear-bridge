@@ -1,10 +1,67 @@
+$bgOrange: #ff8c57;
+$bgGray: #AAAAAA;
+$txtOrange: #C48820;
+$blue: #034E7B;
+$lightBlue: #13538A;
+$txtBlue: #153E71;
+$pageW: 70%;
+$grayBoxRadius: 3rem;
+
 main {
-    position: relative;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
     padding: 1rem 0;
+    background-color: #EAEBEF;
+    min-height: 100%;
+
+    section {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            background-color: $bgGray;
+            min-height: 60dvh;
+
+            .step {
+                background-color: $lightBlue;
+                text-align: center;
+                padding: 2rem 0;
+                color: $txtOrange;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .title {
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+                    height: 4rem;
+                    color: $txtBlue;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+
+                .line {
+                    border: 2px solid gray;
+                    width: 80%;
+                    border-radius: 1rem;
+                }
+
+                ul {
+                    padding: 0 1rem 0 2rem;
+                }
+            }
+        }
+    }
 
     app-nav-arrows {
         width: 90%;
