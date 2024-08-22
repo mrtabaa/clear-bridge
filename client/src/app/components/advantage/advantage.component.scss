@@ -30,8 +30,18 @@ main {
                 font-weight: bold;
                 color: black;
 
-                :not(:last-child) {
+                :not(.brand) {
                     vertical-align: bottom;
+                }
+
+                .brand {
+                    .text {
+                        font-family: 'Times New Roman', Times, serif;
+
+                        span {
+                            font-size: 1.7rem;
+                        }
+                    }
                 }
             }
         }
@@ -80,19 +90,19 @@ main {
             }
 
             :nth-child(2) {
-                bottom: 2rem;
+                bottom: 1rem;
             }
 
             :nth-child(3) {
-                bottom: 4rem;
+                bottom: 2rem;
             }
 
             :nth-child(4) {
-                bottom: 6rem;
+                bottom: 3rem;
             }
 
             :nth-child(5) {
-                bottom: 8rem;
+                bottom: 4rem;
             }
 
         }

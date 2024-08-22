@@ -10,13 +10,13 @@ mat-toolbar {
         align-items: center;
         height: 4rem;
 
-        p {
-            font-family: "Fredoka", sans-serif;
+        .text {
+            font-family: 'Times New Roman', Times, serif;
             font-size: 1rem;
-            font-optical-sizing: auto;
-            font-weight: bold;
-            font-style: normal;
-            font-variation-settings: "wdth" 100;
+
+            span {
+                font-size: 1.3rem;
+            }
         }
     }
 

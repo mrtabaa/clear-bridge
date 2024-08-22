@@ -20,6 +20,6 @@ export class AboutUsComponent implements OnInit {
   private _commonService = inject(CommonService);
 
   ngOnInit(): void {
-    this._commonService.pageTitleSig.set('About Us');
+    this._commonService.pageTitleSig.set('ABOUT US');
   }
 }

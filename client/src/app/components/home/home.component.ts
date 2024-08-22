@@ -21,6 +21,6 @@ export class HomeComponent implements OnInit {
   private _commonService = inject(CommonService);
 
   ngOnInit(): void {
-    this._commonService.pageTitleSig.set('Clear Brdige Group');
+    this._commonService.pageTitleSig.set('CLEAR BRIDGE GROUP');
   }
 }

@@ -4,5 +4,5 @@ import { Injectable, signal } from '@angular/core';
   providedIn: 'root'
 })
 export class CommonService {
-  pageTitleSig = signal<string>('Clear Bridge Group');
+  pageTitleSig = signal<string>('CLEAR BRIDGE GROUP');
 }
