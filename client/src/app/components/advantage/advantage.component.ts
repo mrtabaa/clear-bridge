@@ -17,6 +17,6 @@ export class AdvantageComponent implements OnInit {
   private _commonService = inject(CommonService);
 
   ngOnInit(): void {
-    this._commonService.pageTitleSig.set('OUT ADVANTAGE');
+    this._commonService.pageTitleSig.set('OUR ADVANTAGE');
   }
 }

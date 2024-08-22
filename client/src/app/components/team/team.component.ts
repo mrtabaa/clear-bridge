@@ -15,6 +15,6 @@ export class TeamComponent implements OnInit {
   private _commonService = inject(CommonService);
 
   ngOnInit(): void {
-    this._commonService.pageTitleSig.set('OUT TEAM');
+    this._commonService.pageTitleSig.set('OUR TEAM');
   }
 }
