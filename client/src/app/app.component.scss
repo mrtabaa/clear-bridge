@@ -1,6 +1,6 @@
-$navFooterHeight: 4rem;
-$matDividerHeight: 1px;
-
-main {
-    min-height: calc(100dvh - $navFooterHeight - $matDividerHeight);
+.page {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
