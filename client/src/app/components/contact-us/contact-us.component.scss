@@ -72,6 +72,12 @@ $border: solid black 2px;
                     padding: 0 1rem;
                     height: 16rem; // increased height to adjust with .icons
                 }
+
+                .address {
+                    cursor: pointer;
+                    text-decoration: underline;
+                    color: blue;
+                }
             }
         }
     }
