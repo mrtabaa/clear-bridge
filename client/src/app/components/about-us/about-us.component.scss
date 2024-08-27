@@ -86,29 +86,10 @@ main {
         gap: 2rem;
         width: 100%;
 
-        .photo {
-            position: absolute;
-            left: -15rem;
-            bottom: -12rem;
-            background-image: linear-gradient(to bottom right, gray, white);
-            rotate: 45deg;
-            width: 30rem;
-            height: 30rem;
-            border-radius: 4rem;
-
-            img {
-                position: absolute;
-                left: 15rem;
-                top: 5rem;
-                rotate: -45deg;
-                border-radius: 3rem;
-            }
-        }
-
         .texts {
             display: flex;
             flex-direction: column;
-            max-width: 70%;
+            max-width: 60%;
             margin-right: 5%;
             padding: 2rem;
             background-color: $bgOrange;
@@ -131,5 +112,24 @@ main {
         width: 90%;
         position: fixed;
         bottom: 4.5rem;
+    }
+}
+
+.photo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+    .bg {
+        height: 70dvh;
+    }
+
+    .profile-photo {
+        position: absolute;
+        left: 8dvh;
+        bottom: calc(20dvh);
+        border-radius: 40%;
+        // bottom: 35dvh;
     }
 }
