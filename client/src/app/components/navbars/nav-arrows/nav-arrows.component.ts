@@ -20,14 +20,14 @@ export class NavArrowsComponent implements OnInit {
   isContactUsPage = false;
   isHomePage = false;
 
-  routes = ['/', '/about-us', '/advantage', '/process', '/team', '/contact-us'];
+  routes = ['/', '/about-us', '/advantage', '/process', '/team', '/contact-us', '/message-confirmation'];
 
   ngOnInit(): void {
     if (this._url === '/') {
       this.isHomePage = true;
     }
 
-    if (this._url === '/contact-us')
+    if (this._url === '/contact-us' || this._url === '/message-confirmation')
       this.isContactUsPage = true;
   }
 

@@ -1,0 +1,17 @@
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: gray;
+    }
+
+    app-nav-arrows {
+        width: 90%;
+        position: fixed;
+        bottom: 4.5rem;
+    }
+}
