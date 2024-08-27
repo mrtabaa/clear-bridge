@@ -1,8 +1,8 @@
 <mat-toolbar>
-    <div class="brand">
+    <a [routerLink]="['/']" class="brand">
         <img ngSrc="/assets/images/logos/logo.svg" width="90" height="40" priority alt="Logo">
         <p class="text"><span>C</span>LEAR <span>B</span>RIDGE</p>
-    </div>
+    </a>
     <h1 class="title">{{pageTitleSig()}}</h1>
     <button [routerLink]="['/contact-us']" routerLinkActive="router-link-active"  mat-stroked-button>Start Your Search</button>
 </mat-toolbar>
