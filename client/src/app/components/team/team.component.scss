@@ -1,78 +1,76 @@
 $txtOrange: #C48820;
 
-main {
+.page {
+    height: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    min-height: 100%;
+    align-items: center;
 
-    .left {
-        .bg-shape {
-            height: 80dvh;
-            width: 80dvh;
-            position: absolute;
-            left: -35dvh;
-            top: 0;
-            background: linear-gradient(to top right, #97c2ff, #103368);
-            color: $txtOrange;
-            rotate: 45deg;
-            border-radius: 10rem;
-            z-index: -1;
-        }
+    .bg-polygon {
+        position: absolute;
+        // top: -5rem;
+        left: 0;
+        // width: 20%;
+        height: calc(100dvh - 8rem);
+        z-index: -1;
+    }
 
-        .title {
-            position: absolute;
-            left: 20dvh;
-            top: 40dvh;
+    main {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .bg-title {
+            grid-area: bg-title;
             color: $txtOrange;
             font-weight: bold;
         }
-    }
 
-    .right {
-        align-self: flex-end;
-        margin-right: 5rem;
+        .team {
+            grid-area: team;
 
-        .row {
-            position: relative;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
+            .row {
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 2rem;
 
-            .profile-photo {
-                border-radius: 50%;
-            }
-
-            .image-connect-line {
-                border: solid black 2px;
-                height: 40dvh;
-                position: absolute;
-                top: 10dvh;
-                left: 48px;
-                z-index: -1;
-            }
-
-            .content {
-                width: 100%;
-
-                .divider {
-                    width: 100%;
-                    border: dashed black 1px;
+                .profile-photo {
+                    border-radius: 50%;
                 }
 
-                .bottom-text {
-                    margin-top: 0.5rem;
+                .image-connect-line {
+                    border: solid black 2px;
+                    height: 40dvh;
+                    position: absolute;
+                    top: 10dvh;
+                    left: 48px;
+                    z-index: -1;
+                }
+
+                .content {
+                    width: 100%;
+
+                    .divider {
+                        width: 100%;
+                        border: dashed black 1px;
+                    }
+
+                    .bottom-text {
+                        margin-top: 0.5rem;
+                    }
                 }
             }
         }
     }
 
     app-nav-arrows {
-        width: 90%;
+        grid-area: nav-arrow;
         position: fixed;
-        bottom: 4rem;
-        align-self: center;
+        width: 90%;
+        bottom: 4.5rem;
     }
 }
