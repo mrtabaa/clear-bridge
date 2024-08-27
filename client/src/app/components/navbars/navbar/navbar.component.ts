@@ -4,12 +4,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { CommonService } from '../../../services/common.service';
 import { MatDividerModule } from '@angular/material/divider';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
   imports: [
-    NgOptimizedImage,
+    NgOptimizedImage, RouterModule,
     MatToolbarModule, MatButtonModule, MatDividerModule
   ],
   templateUrl: './navbar.component.html',
