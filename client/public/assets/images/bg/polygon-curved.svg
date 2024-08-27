@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.2" width="25.42mm" height="50.81mm" viewBox="7984 11160 2542 5081" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:ooo="http://xml.openoffice.org/svg/export" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:presentation="http://sun.com/xmlns/staroffice/presentation" xmlns:smil="http://www.w3.org/2001/SMIL20/" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xml:space="preserve">
+<svg version="1.2" width="25.41mm" height="50.81mm" viewBox="2270 7667 2541 5081" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:ooo="http://xml.openoffice.org/svg/export" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:presentation="http://sun.com/xmlns/staroffice/presentation" xmlns:smil="http://www.w3.org/2001/SMIL20/" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xml:space="preserve">
  <defs class="EmbeddedBulletChars">
   <g id="bullet-char-template-57356" transform="scale(0.00048828125,-0.00048828125)">
    <path d="M 580,1141 L 1163,571 580,0 -4,571 580,1141 Z"/>
@@ -36,15 +36,15 @@
  <g class="Page">
   <g class="com.sun.star.drawing.ClosedBezierShape">
    <g id="id3">
-    <rect class="BoundingBox" stroke="none" fill="none" x="7984" y="11160" width="2542" height="5081"/>
+    <rect class="BoundingBox" stroke="none" fill="none" x="2270" y="7667" width="2541" height="5081"/>
     <g>
      <defs>
-      <linearGradient id="gradient1" x1="7838" y1="11245" x2="10672" y2="16155" gradientUnits="userSpaceOnUse">
+      <linearGradient id="gradient1" x1="4013" y1="12888" x2="3067" y2="7526" gradientUnits="userSpaceOnUse">
        <stop offset="0" style="stop-color:rgb(151,194,255)"/>
        <stop offset="1" style="stop-color:rgb(16,51,104)"/>
       </linearGradient>
      </defs>
-     <path style="fill:url(#gradient1)" d="M 7985,11160 L 8620,11160 9890,12430 9917,12459 9989,12539 10091,12664 10208,12827 10324,13019 10378,13124 10426,13234 10466,13347 10498,13463 10518,13581 10525,13700 10518,13819 10498,13937 10466,14053 10426,14166 10378,14276 10324,14381 10208,14573 10091,14736 9989,14861 9917,14941 9890,14970 8620,16240 7985,16240 7985,11160 Z"/>
+     <path style="fill:url(#gradient1)" d="M 2270,7667 L 2905,7667 4175,8937 4202,8966 4274,9046 4376,9171 4493,9334 4609,9526 4663,9631 4711,9741 4751,9854 4783,9970 4803,10088 4810,10207 4803,10326 4783,10444 4751,10560 4711,10673 4663,10783 4609,10888 4493,11080 4376,11243 4274,11368 4202,11448 4175,11477 2905,12747 2270,12747 2270,7667 Z"/>
     </g>
    </g>
   </g>
