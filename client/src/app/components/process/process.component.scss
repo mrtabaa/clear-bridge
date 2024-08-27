@@ -30,9 +30,28 @@ main {
 
             .step {
                 background-color: $lightBlue;
-                text-align: center;
-                padding: 2rem 0;
-                color: $txtOrange;
+                position: relative;
+                margin-bottom: 3.5rem;
+                display: flex;
+                justify-content: center;
+
+                .text {
+                    text-align: center;
+                    color: $txtOrange;
+                    margin: 0;
+                    padding: 2rem 0;
+                }
+
+                .triangle {
+                    position: absolute;
+                    bottom: -2.4rem;
+                    width: 0; 
+                    height: 0; 
+                    border-left: 2rem solid transparent;
+                    border-right: 2rem solid transparent;
+                    
+                    border-top: 2.5rem solid #718bab;
+                }
             }
 
             .content {
@@ -44,7 +63,6 @@ main {
                     padding: 0;
                     margin: 0;
                     text-align: center;
-                    height: 4rem;
                     color: $txtBlue;
                     font-size: 1.2rem;
                     font-weight: bold;
