@@ -36,27 +36,16 @@ $border: solid black 2px;
         }
 
         .contact {
-            width: Min(60rem, 80%);
             display: flex;
             align-items: center;
 
-            form {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-                width: Min(30rem, 40%);
-                background-color: #EAEBEF;
-                padding: 3rem;
-                border: $border;
+            .jotform {
+                height: 41rem;
+                width: 500px;
+                border: 2px solid black;
                 border-radius: 1rem;
-
-                * {
-                    flex: 1;
-                }
-
-                button {
-                    align-self: center;
-                }
+                padding-right: 1rem;
+                background-color: white;
             }
 
             .contact-info {
