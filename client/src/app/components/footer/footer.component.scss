@@ -1,11 +1,29 @@
 mat-toolbar {
     background-color: #F4F1EC;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
-    p {
+    * {
         font-size: 1rem;
         color: gray;
+    }
+    
+    a {
+        display: flex;
+        align-items: center;
+        line-height: 1.3rem;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    mat-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
     }
 }
