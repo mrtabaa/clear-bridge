@@ -1,3 +1,5 @@
+$orange: #C48820;
+
 mat-toolbar {
     background-color: #F4F1EC;
     display: flex;
@@ -27,7 +29,7 @@ mat-toolbar {
     }
 
     button {
-        background-color: #C48820;
+        background-color: $orange;
     }
 }
 
