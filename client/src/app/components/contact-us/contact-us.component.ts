@@ -4,12 +4,13 @@ import { NavArrowsComponent } from '../navbars/nav-arrows/nav-arrows.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { GoogleMapsComponent } from '../dialogs/google-maps/google-maps.component';
+import { NavbarComponent } from '../navbars/navbar/navbar.component';
 
 @Component({
   selector: 'app-contact-us',
   standalone: true,
   imports: [
-    NavArrowsComponent,
+    NavbarComponent, NavArrowsComponent,
     MatIconModule, MatDialogModule
   ],
   templateUrl: './contact-us.component.html',

@@ -4,13 +4,14 @@ import { RouterModule } from '@angular/router';
 import { NavArrowsComponent } from '../navbars/nav-arrows/nav-arrows.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { NgOptimizedImage } from '@angular/common';
+import { NavbarComponent } from '../navbars/navbar/navbar.component';
 
 @Component({
   selector: 'app-about-us',
   standalone: true,
   imports: [
     RouterModule, NgOptimizedImage,
-    NavArrowsComponent,
+    NavbarComponent, NavArrowsComponent,
     MatDividerModule
   ],
   templateUrl: './about-us.component.html',

@@ -17,7 +17,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: #EAEBEF;
-    min-height: 100%;
+    min-height: calc(100% - 4rem); // - navbar height
 
     table {
         border-spacing: 1rem 0;

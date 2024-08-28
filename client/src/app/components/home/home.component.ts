@@ -5,13 +5,14 @@ import { SecondNavComponent } from '../navbars/second-nav/second-nav.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { NavArrowsComponent } from '../navbars/nav-arrows/nav-arrows.component';
+import { NavbarComponent } from '../navbars/navbar/navbar.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     RouterModule,
-    SecondNavComponent, NavArrowsComponent,
+    NavbarComponent, SecondNavComponent, NavArrowsComponent,
     MatIconModule, MatButtonModule
   ],
   templateUrl: './home.component.html',
