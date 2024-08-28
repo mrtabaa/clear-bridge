@@ -30,3 +30,48 @@ mat-toolbar {
         background-color: #C48820;
     }
 }
+
+.animate--increase-width {
+    // animation-duration: 1s;
+    // animation-name: divider;
+    // animation-timing-function: ease-in-out; // ease-in, ease-out
+    // animation-delay: 1s;
+    // animation-iteration-count: infinite; // 3
+    // animation-duration: alternate; // reverse
+    // animation-fill-mode: forwards;
+
+    // animation: 1s divider ease-in-out 1s infinite alternate forwards;
+    animation: increaseWidth ease-in-out;
+}
+
+.animate--slow {
+    animation-duration: 2s;
+}
+
+.animate--fast {
+    animation-duration: 1s;
+}
+
+.animate--fade {
+    animation: 1s fadeOut ease-in;
+}
+
+@keyframes increaseWidth {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
