@@ -17,9 +17,10 @@ $border: solid black 2px;
         background: linear-gradient(to top right, #97c2ff, #103368);
         /* Gradient background */
         clip-path: polygon(0 0, 30% 0, 100% 50%, 30% 100%, 0 100%);
-        padding: 42dvh 0 45dvh 50%;
+        // padding: 42dvh 0 45dvh 50%;
         /* Controls the size of the triangle */
         z-index: -1;
+        animation: 0.5s width0To100 forwards;
     }
 
     main {
@@ -86,5 +87,15 @@ $border: solid black 2px;
         width: 90%;
         position: fixed;
         bottom: 4.5rem;
+    }
+}
+
+@keyframes width0To100 {
+    0% {
+        padding: 42dvh 0 45dvh 0;
+    }
+
+    100% {
+        padding: 42dvh 0 45dvh 60%;
     }
 }
