@@ -1,7 +1,10 @@
 $bgOrange: #ff8c57;
 $txtOrange: #C48820;
-$animateDurationFast: 0.6s;
-$animateDurationSlow: 1s;
+$animateTime--0-1: 0.1s;
+$animateTime--0-25: 0.25s;
+$animateTime--0-5: 0.5s;
+$animateTime--0-75: 0.75s;
+$animateTime--1: 1s;
 
 main {
     position: relative;
@@ -20,7 +23,7 @@ main {
         z-index: 1;
 
         .header {
-            animation: $animateDurationFast slideTopToBottom ease-in;
+            animation: $animateTime--0-5 slideTopToBottom ease-in;
         }
     }
 
@@ -28,7 +31,7 @@ main {
         position: relative;
         height: 50dvh;
         width: 100%;
-        animation: $animateDurationSlow fadeIn ease-in-out;
+        animation: $animateTime--1 fadeIn ease-in-out;
 
         .bg-div {
             position: absolute;
@@ -51,6 +54,7 @@ main {
         width: 90%;
         position: fixed;
         bottom: 4.5rem;
+        animation: $animateTime--1 slideToRightZoomInOut $animateTime--1;
     }
 }
 
@@ -81,5 +85,21 @@ main {
 
     100% {
         opacity: 100%;
+    }
+}
+
+@keyframes slideToRightZoomInOut {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        scale: (2);
+        background-color: $bgOrange;
+    }
+
+    100% {
+        scale: (1);
+        transform: translateX(0);
     }
 }
