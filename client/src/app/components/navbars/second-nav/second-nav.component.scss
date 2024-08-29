@@ -1,6 +1,7 @@
 $orangeText: #C48820;
 $bgOrange: #ff8c57;
 $blue: #034E7B;
+$animateZoomInOutWithBounce: zoomInOutWithBounce;
 
 .container {
     display: flex;
@@ -17,6 +18,7 @@ $blue: #034E7B;
             gap: 1rem;
             align-items: center;
             text-decoration: none;
+            animation: 0.5s $animateZoomInOutWithBounce;
 
             &:hover {
                 color: $orangeText;
@@ -38,5 +40,21 @@ $blue: #034E7B;
                 }
             }
         }
+    }
+}
+
+@keyframes zoomInOutWithBounce {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: translateY(5rem);
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: translateY(0);
+        transform: scale(1);
     }
 }
