@@ -3,6 +3,11 @@ $txtOrange: #C48820;
 $blue: #034E7B;
 $pageW: 70%;
 $grayBoxRadius: 3rem;
+$animateDelay--0-1: 0.1s;
+$animateDelay--0-25: 0.25s;
+$animateDelay--0-5: 0.5s;
+$animateDelay--0-75: 0.75s;
+$animateDelay--1: 1s;
 
 p,
 h6,
@@ -174,5 +179,46 @@ main {
         width: 90%;
         position: fixed;
         bottom: 4.5rem;
+    }
+}
+
+.animate-slide-right-fadein {
+    animation: 1s slideRight-FadeIn $animateDelay--0-1;
+}
+
+.animate-delay--0-25 {
+    animation-delay: $animateDelay--0-25;
+    animation-fill-mode: backwards;
+}
+
+.animate-delay--0-5 {
+    animation-delay: $animateDelay--0-5;
+    animation-fill-mode: backwards;
+}
+
+.animate-delay--0-75 {
+    animation-delay: $animateDelay--0-75;
+    animation-fill-mode: backwards;
+}
+
+.animate-delay--1 {
+    animation-delay: $animateDelay--1;
+    animation-fill-mode: backwards;
+}
+
+@keyframes slideRight-FadeIn {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(-20rem);
+    }
+
+    50% {
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 100;
+        transform: translateX(0);
     }
 }
