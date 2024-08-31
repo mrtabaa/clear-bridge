@@ -5,6 +5,7 @@ $animateTime--0-25: 0.25s;
 $animateTime--0-5: 0.5s;
 $animateTime--0-75: 0.75s;
 $animateTime--1: 1s;
+$navbarFooterDividerH: calc(8rem - 2px);
 
 main {
     position: relative;
@@ -13,7 +14,7 @@ main {
     align-items: center;
     gap: 1rem;
     padding: 1rem 0;
-    min-height: calc(100% - 4rem); // - navbar height
+    min-height: $navbarFooterDividerH;
 
     .second-color {
         color: $txtOrange;
