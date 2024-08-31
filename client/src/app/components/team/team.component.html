@@ -1,12 +1,14 @@
 <app-navbar />
-<div class="page">
-    <img class="bg-polygon" src="/assets/images/bg/polygon-curved.svg" alt="" >
-    <main>
+<main>
+    <img class="bg-polygon" src="/assets/images/bg/polygon-curved.svg" alt="">
+    <div class="left-empty-box">
         <h5 class="bg-title">OUR TEAM</h5>
-        <section class="team">
+    </div>
+    <section class="team">
+        <div class="team-container">
             <div class="row animate-slide-up-fadein">
-                <img class="profile-photo animate-slide-up-fadein animate-delay--0-25" ngSrc="/assets/images/mates/mate-0.webp" width="{{photoWH}}"
-                    height="{{photoWH}}" alt="Loading...">
+                <img class="profile-photo animate-slide-up-fadein animate-delay--0-25"
+                    ngSrc="/assets/images/mates/mate-0.webp" width="{{photoWH}}" height="{{photoWH}}" alt="Loading...">
                 <div class="image-connect-line"></div>
                 <div class="content">
                     <h6 class="name">Ehsan Bazaz</h6>
@@ -26,11 +28,13 @@
                     height="{{photoWH}}" alt="Loading...">
             </div>
             <div class="row animate-slide-up-fadein animate-delay--0-5">
-                <img class="profile-photo animate-slide-up-fadein animate-delay--0-25" ngSrc="/assets/images/mates/mate-1.webp" width="{{photoWH}}"
-                    height="{{photoWH}}" alt="Loading...">
+                <img class="profile-photo animate-slide-up-fadein animate-delay--0-25"
+                    ngSrc="/assets/images/mates/mate-1.webp" width="{{photoWH}}" height="{{photoWH}}" alt="Loading...">
                 <div class="content">
                     <h6 class="name">Misha Vinarksi</h6>
-                    <p class="top-text animate-slide-up-fadein animate-delay--0-5">Investment Banking Analyst Deutsche Bank</p>
+                    <p class="top-text animate-slide-up-fadein animate-delay--0-5">Investment Banking Analyst Deutsche
+                        Bank
+                    </p>
                     <div class="divider animate-slide-up-fadein animate-delay--0-5"></div>
                     <p class="bottom-text animate-slide-up-fadein animate-delay--0-75">
                         Technology <br />
@@ -42,8 +46,8 @@
                     alt="Loading...">
             </div>
             <div class="row animate-slide-up-fadein animate-delay--0-75">
-                <img class="profile-photo animate-slide-up-fadein animate-delay--0-25" ngSrc="/assets/images/mates/mate-2.webp" width="{{photoWH}}"
-                    height="{{photoWH}}" alt="Loading...">
+                <img class="profile-photo animate-slide-up-fadein animate-delay--0-25"
+                    ngSrc="/assets/images/mates/mate-2.webp" width="{{photoWH}}" height="{{photoWH}}" alt="Loading...">
                 <div class="content">
                     <h6 class="name">Ish Hunanyan</h6>
                     <p class="top-text animate-slide-up-fadein animate-delay--0-5">
@@ -59,7 +63,7 @@
                 <img class="uni-logo" ngSrc="/assets/images/uni-logos/usc.webp" width="{{photoWH}}" height="50"
                     alt="Loading...">
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
     <app-nav-arrows />
-</div>
+</main>
