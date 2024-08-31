@@ -13,6 +13,7 @@ main {
     position: relative;
     min-height: calc(100% - 4rem);
     display: flex;
+    justify-content: center;
     align-items: center;
 
     .bg-polygon {
