@@ -5,13 +5,20 @@
     <main>
         <h5 class="bg-title">Get in Touch With Us</h5>
         <section class="contact">
-            <iframe class="jotform" id="JotFormIFrame-242395418932059" title="Clear Bridge Contact Form"
-                onload="window.parent.scrollTo(0,0)" allowtransparency="true"
-                allow="geolocation; microphone; camera; fullscreen" src="https://form.jotform.com/242395418932059"
-                frameborder="0" scrolling="no">
-            </iframe>
-            <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-            <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-242395418932059']", "https://form.jotform.com/")</script>
+            <div class="jotform">
+                @if(!isJotformLoaded) {
+                <div class="loading">
+                    <mat-spinner />
+                </div>
+                }
+                <iframe jotForm (load)="onJotformLoad()" id="JotFormIFrame-242395418932059"
+                    title="Clear Bridge Contact Form" onload="window.parent.scrollTo(0,0)" allowtransparency="true"
+                    allow="geolocation; microphone; camera; fullscreen" src="https://form.jotform.com/242395418932059"
+                    frameborder="0" scrolling="no">
+                </iframe>
+                <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+                <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-242395418932059']", "https://form.jotform.com/")</script>
+            </div>
             <div class="contact-info">
                 <div class="icons">
                     <a href="tel:+1 323-391-6216">

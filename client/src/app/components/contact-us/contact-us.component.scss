@@ -41,12 +41,30 @@ $border: solid black 2px;
             align-items: center;
 
             .jotform {
-                height: 41rem;
-                width: 500px;
+                position: relative;
                 border: 2px solid black;
                 border-radius: 1rem;
                 padding-right: 1rem;
-                background-color: white;
+                
+                .loading {
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 500px;
+                    height: 100%;
+                    text-align: center;
+                    background-color: white;
+                    border-radius: 1rem;
+
+                    
+                }
+
+                iframe {
+                    height: 42.5rem;
+                    width: 500px;
+                    border-radius: 1rem;
+                }
             }
 
             .contact-info {
