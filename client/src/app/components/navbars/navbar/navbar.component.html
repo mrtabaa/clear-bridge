@@ -4,6 +4,14 @@
         <p class="text"><span>C</span>LEAR <span>B</span>RIDGE</p>
     </a>
     <h1 class="title animate--slow animate--fade">{{pageTitleSig()}}</h1>
-    <button [routerLink]="['/contact-us']" routerLinkActive="router-link-active"  mat-stroked-button>Start Your Search</button>
+    @if(router.url === '/contact-us')
+    {
+        <div class="empty-box"></div>
+    }
+    @else {
+        <button [routerLink]="['/contact-us']" routerLinkActive="router-link-active" mat-stroked-button>
+            Start Your Search
+        </button>
+    }
 </mat-toolbar>
-<mat-divider class="animate--increase-width animate--fast"/>
+<mat-divider class="animate--increase-width animate--fast" />
