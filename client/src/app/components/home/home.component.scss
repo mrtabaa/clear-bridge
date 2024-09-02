@@ -24,7 +24,7 @@ main {
         z-index: 1;
 
         .header {
-            animation: $animateTime--0-5 slideTopToBottom ease-in;
+            animation: $animateTime--1 slideTopToBottom ease-in-out;
         }
     }
 
