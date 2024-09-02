@@ -2,6 +2,7 @@ $orangeText: #C48820;
 $bgOrange: #ff8c57;
 $blue: #034E7B;
 $animateZoomInOutWithBounce: zoomInOutWithBounce;
+$matIconSize: 4rem;
 
 .container {
     display: flex;
@@ -23,11 +24,11 @@ $animateZoomInOutWithBounce: zoomInOutWithBounce;
             &:hover {
                 color: $orangeText;
             }
-            
+
             mat-icon {
-                font-size: 4rem;
-                width: fit-content;
-                height: fit-content;
+                font-size: $matIconSize;
+                width: $matIconSize;
+                height: $matIconSize;
                 background-color: $blue;
                 border: 3px solid $bgOrange;
                 border-radius: 50%;
