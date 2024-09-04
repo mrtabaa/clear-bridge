@@ -5,16 +5,16 @@
     <main>
         <h5 class="bg-title">Get in Touch With Us</h5>
         <section class="contact">
-            <div class="jotform">
-                @if(!isJotformLoaded) {
+            <form>
+                @if(!isformLoaded) {
                 <div class="loading">
                     <mat-spinner />
                 </div>
                 }
-                <iframe iframe (load)="onFormLoad()" src="https://www.cognitoforms.com/f/TjDxkuT1QEilJjWEIqaM4A/1"
+                <iframe (load)="onFormLoad()" src="https://www.cognitoforms.com/f/TjDxkuT1QEilJjWEIqaM4A/1"
                     allow="payment"></iframe>
                 <script src="https://www.cognitoforms.com/f/iframe.js"></script>
-            </div>
+            </form>
             <div class="contact-info">
                 <div class="icons">
                     <a href="tel:+1 323-391-6216">

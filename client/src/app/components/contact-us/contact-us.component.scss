@@ -40,12 +40,12 @@ $border: solid black 2px;
             display: flex;
             align-items: center;
 
-            .jotform {
+            form {
                 position: relative;
                 border: 2px solid black;
                 border-radius: 1rem;
                 padding-right: 1rem;
-                
+
                 .loading {
                     position: absolute;
                     display: flex;
@@ -54,7 +54,6 @@ $border: solid black 2px;
                     width: 500px;
                     height: 100%;
                     text-align: center;
-                    background-color: white;
                     border-radius: 1rem;
                 }
 
@@ -117,4 +116,8 @@ $border: solid black 2px;
     100% {
         padding: 42dvh 0 45dvh 60%;
     }
+}
+
+:root .cog-cognito {
+    background-color: red;
 }
