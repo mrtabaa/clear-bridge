@@ -4,7 +4,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { CommonService } from '../../../services/common.service';
 import { MatDividerModule } from '@angular/material/divider';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -18,4 +18,5 @@ import { RouterModule } from '@angular/router';
 })
 export class NavbarComponent {
   pageTitleSig: Signal<string> = inject(CommonService).pageTitleSig;
+  router = inject(Router);
 }

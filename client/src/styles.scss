@@ -1,18 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
 
 p {
     font-family: arial, "Helvetica Neue", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: "Playfair Display", serif !important;
-    font-optical-sizing: auto !important;
-    font-style: normal !important;
 }
