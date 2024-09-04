@@ -56,14 +56,15 @@ $border: solid black 2px;
                     text-align: center;
                     background-color: white;
                     border-radius: 1rem;
-
-                    
                 }
 
                 iframe {
                     height: 42.5rem;
                     width: 500px;
+                    border: none;
                     border-radius: 1rem;
+                    padding: 1rem;
+                    background-color: white;
                 }
             }
 
