@@ -5,7 +5,7 @@ $animateTime--0-25: 0.25s;
 $animateTime--0-5: 0.5s;
 $animateTime--0-75: 0.75s;
 $animateTime--1: 1s;
-$navbarFooterDividerH: calc(8rem - 2px);
+$navbarFooterDividerH: calc(8rem + 2px + 2rem); // nav/footer + dividers + padding
 
 main {
     position: relative;
@@ -14,7 +14,8 @@ main {
     align-items: center;
     gap: 1rem;
     padding: 1rem 0;
-    min-height: $navbarFooterDividerH;
+    min-height: calc(100dvh - $navbarFooterDividerH);
+    background-color: red;
 
     .second-color {
         color: $txtOrange;
@@ -33,9 +34,10 @@ main {
 
     .bg {
         position: relative;
-        height: 50dvh;
+        // height: 30dvh;
         width: 100%;
         animation: $animateTime--1 fadeIn ease-in-out;
+        background-color: green;
 
         .bg-div {
             position: absolute;
